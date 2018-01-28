@@ -19,20 +19,20 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 89.6, y: 0, z: 0}
-        inSlope: {x: -91.1, y: 0, z: 0}
-        outSlope: {x: -91.1, y: 0, z: 0}
+        value: {x: -53.7, y: -4.2, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 1
-        value: {x: -1.5, y: 0, z: 0}
-        inSlope: {x: -91.1, y: 0, z: 0}
-        outSlope: {x: -91.1, y: 0, z: 0}
+        time: 4.483333
+        value: {x: -195, y: -4.2, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "\u8F66\u5B501"
+    path: car_01
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -44,7 +44,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3834554506
+      path: 3015620089
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -56,7 +56,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 4.483333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,21 +77,21 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 89.6
-        inSlope: -91.1
-        outSlope: -91.1
-        tangentMode: 34
+        value: -53.7
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
       - serializedVersion: 2
-        time: 1
-        value: -1.5
-        inSlope: -91.1
-        outSlope: -91.1
-        tangentMode: 34
+        time: 4.483333
+        value: -195
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: "\u8F66\u5B501"
+    path: car_01
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -99,13 +99,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: -4.2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1
-        value: 0
+        time: 4.483333
+        value: -4.2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -113,7 +113,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: "\u8F66\u5B501"
+    path: car_01
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -126,7 +126,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1
+        time: 4.483333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -135,7 +135,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: "\u8F66\u5B501"
+    path: car_01
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

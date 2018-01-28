@@ -2,8 +2,8 @@
 
 public class CameraFollow : MonoBehaviour
 {
-    private const float Min = 0;
-    private const float Max = 57;
+    public float Min = 0;
+    public float Max = 57;
 
     void Start()
     {
