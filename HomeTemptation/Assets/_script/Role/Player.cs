@@ -4,23 +4,28 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public static Player Me;
-
+    private bool _left;
     private Rigidbody2D _rigidbody2D;
-    private Animator _animator;
     private SpriteRenderer _spriteRenderer;
 
     private float _ySpeed;
     private bool _onGround;
+    private bool _inputEnable;
     void Awake()
     {
         Me = this;
+        _left = true;
+        _inputEnable = true;
         _rigidbody2D = transform.GetComponent<Rigidbody2D>();
-        _animator = transform.GetComponent<Animator>();
         _spriteRenderer = transform.GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()
     {
+        if (!_inputEnable)
+        {
+            return;
+        }
         var hor = InputMove();
         CheckGround();
         if (Input.GetKeyDown(KeyCode.Space))
@@ -61,17 +66,19 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             hor = -1;
-            if (_spriteRenderer.flipX)
+            if (!_left)
             {
-                _spriteRenderer.flipX = false;
+                _left = true;
+                transform.eulerAngles = new Vector3(0, 0, 0);
             }
         }
         else if (Input.GetKey(KeyCode.D))
         {
             hor = 1;
-            if (!_spriteRenderer.flipX)
+            if (_left)
             {
-                _spriteRenderer.flipX = true;
+                _left = false;
+                transform.eulerAngles = new Vector3(0, 180, 0);
             }
         }
         return hor;
@@ -79,6 +86,21 @@ public class Player : MonoBehaviour
 
     public void RainDropHit()
     {
-        _animator.Play("hit", 0, 0);
+
+    }
+
+    public void Slip()
+    {
+        StartCoroutine(SlipStep());
+    }
+
+    private IEnumerator SlipStep()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            yield return new WaitForEndOfFrame();
+            var dir = _left ? -1 : 1;
+            transform.position += new Vector3(dir * Time.deltaTime * 20f, 0);
+        }
     }
 }

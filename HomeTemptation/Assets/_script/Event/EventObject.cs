@@ -26,7 +26,7 @@ public class EventObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            UiCtrl.Me.ShowButton(this);
+            Enter();
         }
     }
 
@@ -34,7 +34,7 @@ public class EventObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            UiCtrl.Me.CloseButton(this);
+            Exit();
         }
     }
 
@@ -45,7 +45,17 @@ public class EventObject : MonoBehaviour
 
     protected virtual void Tick()
     {
-        
+
+    }
+
+    protected virtual void Enter()
+    {
+        UiCtrl.Me.ShowButton(this);
+    }
+
+    protected virtual void Exit()
+    {
+        UiCtrl.Me.CloseButton(this);
     }
 
     public virtual void Trigger()

@@ -6,8 +6,8 @@ public class RainCtrl : MonoBehaviour
 {
     public Raindrop Raindrop;
 
-    public float Invatial = 0.5f;
-    public int Count = 3;
+    public static float Invatial = 0.5f;
+    public static int Count = 3;
 
     private float _timer;
 

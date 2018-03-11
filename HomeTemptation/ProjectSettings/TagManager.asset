@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Empty
+  - Car
   layers:
   - Default
   - TransparentFX
@@ -15,9 +17,9 @@ TagManager:
   - 
   - 
   - Unit
-  - 
-  - 
-  - 
+  - Event
+  - Empty
+  - Rain
   - 
   - 
   - 

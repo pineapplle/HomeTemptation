@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224187852483649914}
-  - component: {fileID: 95831141178682884}
+  - component: {fileID: 95373523314755392}
   - component: {fileID: 114527284519143144}
   m_Layer: 5
   m_Name: Message
@@ -46,7 +46,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &95831141178682884
+--- !u!95 &95373523314755392
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ Animator:
   m_GameObject: {fileID: 1565871022247576}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9df9a76e6c8f2a843a2b81f3d1dbb74d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0b0db5232eb237748bdf56c29a34c186, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
