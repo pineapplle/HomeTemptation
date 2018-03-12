@@ -1,23 +1,14 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: ced12c16442d0b14688d519c3b60f179
-timeCreated: 1517136238
-=======
-guid: 26344c2c3f6c9a64ab32c1920861cc0e
-timeCreated: 1517130824
->>>>>>> 7e88b81e5139a27670247d60a5482a5dd847c816
-licenseType: Free
+guid: ea71bd867efc26049802b9f6c2aed80a
+timeCreated: 1520777416
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> 7e88b81e5139a27670247d60a5482a5dd847c816
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -41,18 +32,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-<<<<<<< HEAD
     aniso: -1
-    mipBias: -1
-    wrapU: -1
-    wrapV: -1
-    wrapW: -1
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
-    aniso: 0
     mipBias: -1
     wrapU: 1
     wrapV: 1
@@ -61,23 +41,16 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
->>>>>>> 7e88b81e5139a27670247d60a5482a5dd847c816
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 1, y: 5, z: 1, w: 5}
   spritePixelsToUnits: 100
   alphaUsage: 1
-<<<<<<< HEAD
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
->>>>>>> 7e88b81e5139a27670247d60a5482a5dd847c816
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -92,9 +65,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<< HEAD
-    androidETC2FallbackOverride: 0
-=======
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -104,7 +74,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
->>>>>>> 7e88b81e5139a27670247d60a5482a5dd847c816
   spriteSheet:
     serializedVersion: 2
     sprites: []
