@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RainCtrl : MonoBehaviour
 {
@@ -13,7 +11,7 @@ public class RainCtrl : MonoBehaviour
 
     void Start()
     {
-
+        Count = 3;
     }
 
     void Update()

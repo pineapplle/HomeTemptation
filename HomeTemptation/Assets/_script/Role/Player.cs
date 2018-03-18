@@ -89,18 +89,17 @@ public class Player : MonoBehaviour
 
     }
 
-    public void Slip()
+    public void Slip(int count)
     {
-        StartCoroutine(SlipStep());
+        StartCoroutine(SlipStep(count));
     }
 
-    private IEnumerator SlipStep()
+    private IEnumerator SlipStep(int count)
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < count; i++)
         {
             yield return new WaitForEndOfFrame();
-            var dir = _left ? -1 : 1;
-            transform.position += new Vector3(dir * Time.deltaTime * 20f, 0);
+            transform.position += new Vector3(Time.deltaTime * 20f, 0);
         }
     }
 }

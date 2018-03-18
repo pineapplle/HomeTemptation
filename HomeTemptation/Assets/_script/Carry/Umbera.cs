@@ -9,7 +9,7 @@ public class Umbera : MonoBehaviour
         return obj.AddComponent<Umbera>();
     }
 
-    private float _keepTime = 30f;
+    private float _keepTime = 20f;
 
     void Start()
     {

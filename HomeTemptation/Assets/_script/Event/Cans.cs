@@ -19,6 +19,6 @@ public class Cans : EventObject
     protected override void Enter()
     {
         Destroy(gameObject);
-        Player.Me.Slip();
+        Player.Me.Slip(5);
     }
 }
