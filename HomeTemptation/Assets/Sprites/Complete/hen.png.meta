@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: 63efa8c8a8f674a469f95c5098ad9695
+timeCreated: 1521906614
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hen_0
+    21300002: hen_1
+    21300004: hen_2
+    21300006: hen_3
+    21300008: hen_4
+    21300010: hen_5
+    21300012: hen_6
+    21300014: hen_7
+    21300016: hen_8
+    21300018: hen_9
+    21300020: hen_10
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hen_0
+      rect:
+        serializedVersion: 2
+        x: 7.587105
+        y: 26.493195
+        width: 186
+        height: 189
+      alignment: 9
+      pivot: {x: 0.49684352, y: 0.49739048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 156
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 150
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 100
+        width: 63
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_4
+      rect:
+        serializedVersion: 2
+        x: 376.28125
+        y: 93.12501
+        width: 133
+        height: 112.99999
+      alignment: 9
+      pivot: {x: 0.26171806, y: 0.4671262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 132
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_6
+      rect:
+        serializedVersion: 2
+        x: 215.59679
+        y: 17.735168
+        width: 47.000015
+        height: 63
+      alignment: 9
+      pivot: {x: 0.50857884, y: 0.5042037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_7
+      rect:
+        serializedVersion: 2
+        x: 287.2378
+        y: 16.901695
+        width: 41
+        height: 66
+      alignment: 9
+      pivot: {x: 0.64994997, y: 0.5014896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_8
+      rect:
+        serializedVersion: 2
+        x: 375.29492
+        y: 25.61377
+        width: 33
+        height: 49
+      alignment: 9
+      pivot: {x: 0.6106096, y: 0.4907879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_9
+      rect:
+        serializedVersion: 2
+        x: 454.12036
+        y: 25.539394
+        width: 33
+        height: 49.000004
+      alignment: 9
+      pivot: {x: 0.46604967, y: 0.4889919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hen_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 125.23483
+        width: 91
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49638718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99739669354671
+  assetBundleName: 
+  assetBundleVariant: 

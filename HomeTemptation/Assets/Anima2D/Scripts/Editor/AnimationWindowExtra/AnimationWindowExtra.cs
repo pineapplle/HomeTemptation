@@ -49,10 +49,8 @@ namespace Anima2D
 			s_Impl = new AnimationWindowImpl_54();
 #elif UNITY_5_5
 			s_Impl = new AnimationWindowImpl_55();
-#elif UNITY_5_6
+#elif UNITY_5_6_OR_NEWER
 			s_Impl = new AnimationWindowImpl_56();
-#elif UNITY_2017_1_OR_NEWER
-			s_Impl = new AnimationWindowImpl_2017_1();
 #endif
 			s_Impl.InitializeReflection();
 		}
