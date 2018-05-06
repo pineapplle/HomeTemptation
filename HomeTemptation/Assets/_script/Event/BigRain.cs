@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BigRain : EventObject
 {
+    public int Count;
     protected override void Enter()
     {
-        RainCtrl.Count = 15;
+        RainCtrl.Count = Count;
     }
 
     protected override void Exit()

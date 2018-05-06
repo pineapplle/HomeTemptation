@@ -19,6 +19,7 @@ public class MouseLittle : EventObject
         foreach (var mouseHit in Parents)
         {
             mouseHit.gameObject.SetActive(true);
+            Destroy(mouseHit.gameObject, 10);
         }
     }
 }

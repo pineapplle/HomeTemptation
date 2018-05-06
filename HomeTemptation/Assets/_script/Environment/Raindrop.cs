@@ -3,6 +3,7 @@
 public class Raindrop : MonoBehaviour
 {
     public static float Wind;
+    public GameObject OnHit;
     private float _speed;
 
     void Start()
@@ -23,11 +24,20 @@ public class Raindrop : MonoBehaviour
         {
             return;
         }
+        ShowHit();
+
         if (other.gameObject.tag == "Player")
         {
             UiCtrl.Me.OffsetHp(50);
             Player.Me.RainDropHit();
         }
         Destroy(gameObject);
+    }
+
+    private void ShowHit()
+    {
+        var instantiate = Instantiate(OnHit);
+        instantiate.transform.position = transform.position;
+        Destroy(instantiate, 0.2f);
     }
 }

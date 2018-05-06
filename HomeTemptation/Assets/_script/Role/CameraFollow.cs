@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
-
+        GetComponent<AudioSource>().volume = Interface_music.volume;
     }
 
     void LateUpdate()

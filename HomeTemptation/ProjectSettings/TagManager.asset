@@ -50,6 +50,9 @@ TagManager:
   - name: Unit
     uniqueID: 2402484859
     locked: 0
+  - name: Player
+    uniqueID: 2795534999
+    locked: 0
   - name: Car
     uniqueID: 2292833011
     locked: 0

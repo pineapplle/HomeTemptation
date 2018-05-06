@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
     public static Player Me;
     private bool _left;
     private Rigidbody2D _rigidbody2D;
-    private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
 
     private float _ySpeed;
     private bool _onGround;
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
         _left = true;
         _inputEnable = true;
         _rigidbody2D = transform.GetComponent<Rigidbody2D>();
-        _spriteRenderer = transform.GetComponentInChildren<SpriteRenderer>();
+        _animator = transform.GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -32,7 +32,9 @@ public class Player : MonoBehaviour
         {
             if (_onGround)
             {
+                _animator.SetBool("ground", false);
                 _ySpeed = 7f;
+                _onGround = false;
             }
         }
         if (!_onGround)
@@ -40,18 +42,21 @@ public class Player : MonoBehaviour
             _ySpeed -= 20 * Time.deltaTime;
         }
 
-        var offset = new Vector2(hor * 5, _ySpeed) * Time.deltaTime;
+        _animator.SetFloat("speed", Mathf.Abs(hor));
+        var offset = new Vector2(hor * 4, _ySpeed) * Time.deltaTime;
         var targetPoint = _rigidbody2D.position + offset;
         _rigidbody2D.MovePosition(targetPoint);
     }
 
     void CheckGround()
     {
+        if (_ySpeed > 0) return;
         var raycastHit2D = Physics2D.RaycastAll(transform.position + new Vector3(0, 0.1f, 0), Vector2.down, 0.2f, LayerMask.GetMask("Default"));
         foreach (var hit2D in raycastHit2D)
         {
             if (hit2D.collider != null && !hit2D.collider.isTrigger)
             {
+                _animator.SetBool("ground", true);
                 _onGround = true;
                 _ySpeed = 0;
                 return;
@@ -82,6 +87,19 @@ public class Player : MonoBehaviour
             }
         }
         return hor;
+    }
+
+    public void Fall()
+    {
+        _animator.SetTrigger("fall");
+        _inputEnable = false;
+        StartCoroutine(Col(1.5f));
+    }
+
+    private IEnumerator Col(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+        _inputEnable = true;
     }
 
     public void RainDropHit()
